@@ -1,0 +1,15 @@
+﻿<Window x:Class="DeleteTfsProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="TFS プロジェクト削除ツール" Height="470" Width="400" WindowStartupLocation="CenterScreen">
+    <StackPanel Orientation="Vertical">
+        <Button Name="buttonSelectTFS" Content="Team Foundation Serverへ接続" Click="Button_Click_1" FontSize="20"/>
+        <CheckBox Name="checkIsHttps" Content="https" FontSize="20" IsChecked="True"/>
+        <TextBlock Text="サーバー名："  FontSize="20" />
+        <TextBlock Name="textBlockServerName"  FontSize="16" />
+        <TextBlock Text="プロジェクトリスト："  FontSize="20" />
+        <ListBox Name="listProjectNames" Height="250" FontSize="20" />
+        <Button Name="buttonDelete" Content="削除" Click="Button_Click_2"  FontSize="20" />
+        <ProgressBar Name="deketeProgress" Height="30" />
+    </StackPanel>
+</Window>
